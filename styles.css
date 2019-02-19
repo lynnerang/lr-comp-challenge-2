@@ -49,24 +49,23 @@ nav ul {
 }
 
 nav ul li {
+  color: #a0abbf;
   font-weight: 600;
   padding: 12px 20px;
   text-transform: uppercase;
 }
 
-nav ul li:hover, aside a:hover, aside label:hover {
+nav ul li:hover {
   color: white;
 }
 
-nav .fas {
-  color: #a0abbf;
+nav i {
   font-size: 14px;
   padding-right: 10px;
   width: 25px;
 }
 
 .fa-angle-down {
-  color: #a0abbf;
   font-size: 12px;
   padding-left: 3px;
 }
@@ -100,6 +99,10 @@ li.active i {
   text-decoration: none;
 }
 
+.profile a:hover {
+  color: white;
+}
+
 .filters {
   border-bottom: none;
   padding-top: 20px;
@@ -115,6 +118,11 @@ fieldset {
   padding: 15px 20px 10px 20px;
 }
 
+.filter-item:hover {
+  color: white;
+  cursor: pointer;
+}
+
 label {
   padding-left: 5px;
 }
@@ -125,6 +133,7 @@ header {
   background: white;
   border-bottom: 2px solid #e3e8ec;
   display: flex;
+  position: relative;
 }
 
 header .fa, header .fas {
@@ -143,27 +152,23 @@ header .fa, header .fas {
   max-width: 65px;
 }
 
-.header-icons:hover, .fa-stack:hover {
+.header-icons:hover {
   background: #16a4f6;
   color: white;
+  cursor: pointer;
 }
 
-.fa-stack {
-  width: 65px;
-}
-
-.fa-stack i {
-  display: inline-block;
-}
-
-.fa-stack i:hover {
-  color: white;
+.header-icons {
+  color: #16a4f6;
+  font-size: 13px;
 }
 
 i.fa-caret-left {
+  position: absolute;
+  font-size: 12px;
+  top: 27px;
+  left: 15px;
   color: #16a4f6;
-  font-size: 11px;
-  padding-right: 2px;
 }
 
 i.fa-search {
@@ -265,6 +270,7 @@ h1 {
 .job-btn:hover {
   border-color: #16a4f6;
   color: #16a4f6;
+  cursor: pointer;
 }
 
 .job-btn i {
@@ -314,6 +320,7 @@ i.fa-circle:hover {
 .tablink:hover {
   border-bottom: 2px solid #16a4f6;
   color: #16a4f6;
+  cursor: pointer;
 }
 
 .tabs {
@@ -454,8 +461,7 @@ svg:hover {
 }
 
 .hr-icon:hover {
-  background: white;
-  color: #16a4f6;
+  cursor: pointer;
 }
 
 
@@ -471,13 +477,32 @@ svg:hover {
   padding: 40px;
 }
 
+.table-surround {
+  background: white;
+  padding: 0px 30px 0px 30px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px lightgrey;
+  box-sizing: content-box;
+  position: relative;
+  z-index:1;
+}
+
+.table-surround:before {
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    width:100%;
+    height:68px;
+    content:"";
+    background-color: #6f7e95;
+    border-radius: 3px 3px 0px 0px;
+}
+
 table {
   -moz-border-radius:3px;
   background: white;
   border-collapse: separate;
-  border-radius: 3px;
-  box-shadow: 1px 1px 3px lightgrey;
-  box-sizing: content-box;
   width: 100%;
 }
 
@@ -490,21 +515,29 @@ td {
   border-top: 1px solid #d2dae2;
 }
 
+td.no-border {
+  border: none;
+}
+
 th {
   background: #6f7e95;
   color: white;
-  padding-left: 20px;
   text-align: left;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
-th.field-name {
-  padding-left: 30px;
+th.field-data {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+i.fa-pencil-alt {
+  padding-right: 5px;
+  cursor: pointer;
 }
 
 td.field-name {
-  border-left: 30px solid white;
   font-weight: 600;
   text-transform: uppercase;
   vertical-align: top;
@@ -512,7 +545,6 @@ td.field-name {
 }
 
 td.field-data {
-  border-right: 30px solid white;
   color: #596679;
   font-size: 14px;
   padding-left: 20px;
@@ -546,7 +578,6 @@ td.field-data {
 }
 
 .social-btn i.fab {
-  color: white;
   font-size: 18px;
   left: 25px;
   position: absolute;
@@ -559,7 +590,7 @@ td.field-data {
   position: relative;
 }
 
-.fb-btn:hover, i.fa-facebook-f:hover {
+.fb-btn:hover {
   background: white;
   color: #4a6fc2;
 }
@@ -569,7 +600,7 @@ td.field-data {
   position: relative;
 }
 
-.tw-btn:hover, i.fa-twitter:hover {
+.tw-btn:hover {
   background: white;
   color: #00aaef;
 }
@@ -579,7 +610,7 @@ td.field-data {
   position: relative;
 }
 
-.li-btn:hover, i.fa-linkedin:hover {
+.li-btn:hover {
   background: white;
   color: #0381bd;
 }
@@ -651,7 +682,60 @@ padding-right: 8px;
 
 .copy-btn:hover {
   background: #16a4f6;
+  cursor: pointer;
 }
+
+/*Checkboxes*/
+.color-box {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: green;
+     color: #666;
+     top: 2px;
+     height: 12px;
+     width: 12px;
+     border: 0;
+     border-radius: 2px;
+     cursor: pointer;     
+     margin-right: 2px;
+     outline: none;
+}
+
+#design {
+  background-color: blue;
+}
+
+#executive {
+  background-color: red;
+}
+
+#hr {
+  background-color: purple;
+}
+
+.color-box:checked::before {
+     position: absolute;
+     font: 12px/1;
+     left: 2px;
+     top: -1px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.color-box:hover {
+  border: 1px solid #f7f7f7;
+}
+
+.color-box:checked {
+   color: white;
+}
+
+.color-box:checked + label {
+  color: white;
+} 
+
 
 
 /*Responsive design*/

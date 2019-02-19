@@ -40,26 +40,27 @@
           <fieldset>
             <legend><h3>Categories</h3></legend>
             <div class="filter-item">
-              <input type="checkbox" name="Administrative" id="Administrative">
+              <input type="checkbox" name="Administrative" id="administrative" class="color-box">
               <label for="Administrative">Administrative</label>
             </div>
             <div class="filter-item">
-              <input type="checkbox" name="Design" id="Design">
+              <input type="checkbox" name="Design" id="design" class="color-box">
               <label for="Design">Design</label>
             </div>
             <div class="filter-item">
-              <input type="checkbox" name="Executive" id="Executive">
+              <input type="checkbox" name="Executive" id="executive" class="color-box">
               <label for="Executive">Executive</label>
             </div>
             <div class="filter-item">
-              <input type="checkbox" name="Human Resources" id="HR">
+              <input type="checkbox" name="Human Resources" id="hr" class="color-box">
               <label for="HR">Human Resources</label>
             </div>
           </fieldset>
         </section> 
       </aside>
       <header>
-        <span class="fa-stack header-icons"><i class="fas fa-caret-left"></i><i class="fa fa-bars"></i></span>
+        <i class="fas fa-caret-left"></i>
+        <i class="header-icons fa fa-bars"></i>
         <div class="header-search"><i class="fas fa-search"></i><input class="search-box" placeholder="Search for a job, task or resume"></div>
         <i class="header-icons fas fa-user-plus"></i>
         <i class="header-icons fas fa-file-invoice"></i>
@@ -150,44 +151,46 @@
         </section>
         <section class="job-desc"> 
           <div class="job-details">
-            <table cellspacing="0" cellpadding="0">
-              <tr>
-                <th class="field-name">Job Description</th>
-                <th>Edit</th>
-              </tr>
-              <tr>
-                <td class="field-name">Position Title</td>
-                <td class="field-data">Customer Service Representative</td>
-              </tr>
-              <tr>
-                <td class="field-name">Location</td>
-                <td class="field-data">San Francisco, CA</td>
-              </tr>
-              <tr>
-                <td class="field-name">Employment Type</td>
-                <td class="field-data">Full-time</td>
-              </tr>
-              <tr>
-                <td class="field-name">Experience</td>
-                <td class="field-data">Mid-level</td>
-              </tr>
-              <tr>
-                <td class="field-name">Status</td>
-                <td class="field-data">Open</td>
-              </tr>
-              <tr>
-                <td class="field-name">Description</td>
-                <td class="field-data">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle, helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</td>
-              </tr>
-              <tr>
-                <td class="field-name">Hiring Lead</td>
-                <td class="field-data"><img>Tom Tizzy</td>
-              </tr>
-              <tr>
-                <td class="field-name">Approved Salary</td>
-                <td class="field-data">$58,000</td>
-              </tr>
-            </table>
+            <div class="table-surround">
+              <table cellspacing="0" cellpadding="0">
+                <tr>
+                  <th class="field-name">Job Description</th>
+                  <th class="field-data"><div class="edit-btn" aria-role="button"><i class="fas fa-pencil-alt"></i>Edit</div></th>
+                </tr>
+                <tr>
+                  <td class="field-name no-border">Position Title</td>
+                  <td class="field-data no-border">Customer Service Representative</td>
+                </tr>
+                <tr>
+                  <td class="field-name">Location</td>
+                  <td class="field-data">San Francisco, CA</td>
+                </tr>
+                <tr>
+                  <td class="field-name">Employment Type</td>
+                  <td class="field-data">Full-time</td>
+                </tr>
+                <tr>
+                  <td class="field-name">Experience</td>
+                  <td class="field-data">Mid-level</td>
+                </tr>
+                <tr>
+                  <td class="field-name">Status</td>
+                  <td class="field-data">Open</td>
+                </tr>
+                <tr>
+                  <td class="field-name">Description</td>
+                  <td class="field-data">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle, helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.</td>
+                </tr>
+                <tr>
+                  <td class="field-name">Hiring Lead</td>
+                  <td class="field-data"><img>Tom Tizzy</td>
+                </tr>
+                <tr>
+                  <td class="field-name">Approved Salary</td>
+                  <td class="field-data">$58,000</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <div class="share-job">
             <div class="social-btns">
