@@ -29,10 +29,10 @@ Static Comp #2 was a project I was assigned as a Mod 1 student at Turing.  We we
 
 ## Screenshots
 
-<img src="" alt="Top of website on desktop">
-<img src="" alt="Bottom of website on desktop">
-<img src="" alt="Top of website on mobile">
-<img src="" alt="Bottom of website on mobile">
+<img src="https://github.com/lynnerang/lr-comp-challenge-2/blob/master/screenshots/Desktop1.png" alt="Top of website on desktop">
+<img src="https://github.com/lynnerang/lr-comp-challenge-2/blob/master/screenshots/Desktop2.png" alt="Bottom of website on desktop">
+<img src="https://github.com/lynnerang/lr-comp-challenge-2/blob/master/screenshots/Mobile1.png" alt="Top of website on mobile">
+<img src="https://github.com/lynnerang/lr-comp-challenge-2/blob/master/screenshots/Mobile2.png" alt="Bottom of website on mobile">
 
 
 ## Features
@@ -41,6 +41,7 @@ Static Comp #2 was a project I was assigned as a Mod 1 student at Turing.  We we
 - [x] Pictures of adorable doggos
 - [x] Flex-box styling
 - [x] Grid styling
+- [x] Custom CSS for colored checkboxes
 - [ ] Pictures of adorable kitties
 - [ ] Link destinations
 
