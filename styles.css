@@ -57,6 +57,7 @@ nav ul li {
 
 nav ul li:hover {
   color: white;
+  cursor: pointer;
 }
 
 nav i {
@@ -575,6 +576,7 @@ td.field-data {
   height: 50px;
   margin-bottom: 20px;
   text-align: center;
+  cursor: pointer;
 }
 
 .social-btn i.fab {
