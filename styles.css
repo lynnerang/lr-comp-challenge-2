@@ -534,8 +534,11 @@ th.field-data {
 }
 
 i.fa-pencil-alt {
-  padding-right: 5px;
   cursor: pointer;
+}
+
+table i.fa-pencil-alt {
+  padding-right: 5px;
 }
 
 td.field-name {
@@ -933,9 +936,15 @@ padding-right: 8px;
     white-space: normal;
   }
 
+  th {
+    height: 68px;
+  }
+
   td.field-name, th.field-name {
     border-left: none;
     padding-left: 10px;
+    padding: 0px;
+    vertical-align: middle;
   }
 
   .share-job {
@@ -956,7 +965,10 @@ padding-right: 8px;
     height: 50px;
   }
 
-  header :nth-child(3), header :nth-child(4), header :nth-child(5) {
+  header :first-child,
+  header :nth-child(4), 
+  header :nth-child(5), 
+  header :nth-child(6) {
     display: none;
   }
 
